@@ -14,6 +14,13 @@ npm run build    # production build into dist/
 The page lives in `src/App.jsx`. Edit the `challenge` object at the top to change the
 title, goal, difficulty (`Beginner` / `Intermediate` / `Pro`) or video URL.
 
+## Deployment
+
+Every push to `main` (including a merged pull request) builds the site and publishes it to
+GitHub Pages through `.github/workflows/deploy.yml`. The live site is at
+`https://<your-github-username>.github.io/Daily-video-challenge/`.
+The `base` path in `vite.config.js` must match the repository name.
+
 ## Layout cheat-sheet (flex vs grid)
 
 | Part of the page | Layout | Why |
