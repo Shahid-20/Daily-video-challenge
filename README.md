@@ -18,7 +18,7 @@ title, goal, difficulty (`Beginner` / `Intermediate` / `Pro`) or video URL.
 
 | Part of the page | Layout | Why |
 | --- | --- | --- |
-| Page wrapper | Flexbox | One child (the card) to center — `flex items-center justify-center`. |
+| Page wrapper | Flexbox | Children sit in a row, wrap onto the next line when there's no room, and align to the left — `flex flex-wrap justify-start`. |
 | Header (title + badge) | Flexbox row | Two items on one line, pushed apart with `justify-between`. |
 | Main content (video + details) | Grid | Two dimensions: 1 column on phones, 2 on desktop with one class (`md:grid-cols-2`). |
 | Details (goal + button) | Flexbox column | Simple vertical stack; `mt-auto` pins the button to the bottom. |
